@@ -1,6 +1,6 @@
 # 支付宝小程序
 
-`@megalo/target` 的 `platform` 设置成 `alipay`，`mini-css-extract-plugin` 提取文件后缀改成 微信小程序的 `acss`。
+`@megalo/target` 的 `platform` 设置成 `alipay`，`mini-css-extract-plugin` 提取文件后缀改成支付宝小程序的 `acss`。
 
 ```javascript
 const createMegaloTarget = require( '@megalo/target' )

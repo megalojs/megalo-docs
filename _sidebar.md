@@ -12,7 +12,7 @@
 * 平台
 
   * [微信小程序](platforms/wechat.md)
-  * [支付宝小程序](features/alipay.md)
+  * [支付宝小程序](platforms/alipay.md)
 
 * 应用场景
 

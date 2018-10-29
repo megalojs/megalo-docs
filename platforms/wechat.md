@@ -1,6 +1,6 @@
 # 微信小程序
 
-`@megalo/target` 的 `platform` 设置成 `wechat`，`mini-css-extract-plugin` 提取文件后缀改成 微信小程序的 `wxss`。
+`@megalo/target` 的 `platform` 设置成 `wechat`，`mini-css-extract-plugin` 提取文件后缀改成微信小程序的 `wxss`。
 
 ```javascript
 const createMegaloTarget = require( '@megalo/target' )
