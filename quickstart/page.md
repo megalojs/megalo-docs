@@ -11,17 +11,12 @@ App 逻辑，`app.vue`。应用的生命周期钩子写在这里，运行时通�
 ```html
 <template>
   <div>
-    <h1>{{ title | greeting }}</h1>
+    <h1>{{ title }}</h1>
   </div>
 </template>
 <script>
   export default {
     mpType: 'page',
-    filters: {
-      greeting(t) {
-        return `Hello ${t} !`;
-      }
-    },
     data() {
       return {
         title: 'Megalo'

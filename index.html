@@ -9,15 +9,30 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
+  <style>
+    .app-name-link > img {
+      width: 70px;
+    }
+  </style>
   <div id="app"></div>
   <script>
     window.$docsify = {
       name: 'Megalo',
       repo: 'https://github.com/kaola-fed/megalo',
       loadSidebar: true,     
-      subMaxLevel: 2
+      subMaxLevel: 2,
+      auto2top: true,
+      coverpage: true,
+      logo: '_media/megalo-logo.png',
+      themeColor: '#af141d',
+      search: {
+        noData: '找不到结果',
+        paths: 'auto',
+        placeholder: '搜索'
+      },
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
 </body>
 </html>
