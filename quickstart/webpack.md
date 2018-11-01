@@ -2,6 +2,8 @@
 
 Megalo 在构建时依赖 [`@magelo/target`](https://github.com/kaola-fed/megalo-aot) 和 [`@magelo/template-compiler`](https://github.com/kaola-fed/megalo)。利用 `createMegaloTarget` 方法创建 webpack 的构建目标，通过 `platform` 和 `compiler` 配置好模版编译器和目标平台。
 
+> 注意：`devtool` 不能设置成 `eval` 类型的 sourcemap，如 `cheap-eval-source-map`，因为小程序中不允许执行 `eval`。
+
 ```javascript
 const createMegaloTarget = require( '@megalo/target' )
 const compiler = require( '@megalo/template-compiler' )
@@ -20,6 +22,8 @@ module.exports = {
     compiler,
     platform
   } ),
+
+  devtool: 'source-map',
 
   entry: {
     // 应用入口
