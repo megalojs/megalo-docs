@@ -13,7 +13,12 @@
 
   * [微信小程序](platforms/wechat.md)
   * [支付宝小程序](platforms/alipay.md)
+  * [百度智能小程序](platforms/swan.md)
 
 * 应用场景
 
   * [typescript](senarios/typescript.md)
+
+* 更新日志
+
+  * [更新日志](CHANGELOG.md)
