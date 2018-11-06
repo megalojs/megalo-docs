@@ -1,9 +1,9 @@
 <!-- ![megalo-log](_media/megalo-logo.png) -->
 <img src="./_media/megalo-logo.png" width=150>
 
-# Megalo
+# **Megalo**
 
-## *`['mɪɡələʊ]`*
+## `['mɪɡələʊ]`
 
 > 基于 Vue 的小程序框架
 

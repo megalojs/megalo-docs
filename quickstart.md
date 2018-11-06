@@ -46,10 +46,10 @@ $ npm run dev:swan
 
 开启微信开发者工具，将项目目录指向 `/dist-wechat`，填写 AppID 即可执行。
 
-<img src="../static/imgs/init-1.jpg" width="300" style="box-shadow:0 0 10px #666"> 
+<img src="./static/imgs/init-1.jpg" width="300" style="box-shadow:0 0 10px #666"> 
 
 [*AppID 获取方式*](https://developers.weixin.qq.com/miniprogram/dev/#%E7%94%B3%E8%AF%B7%E5%B8%90%E5%8F%B7)
 
-<img src="../static/imgs/init-2.jpg" width="600" style="box-shadow:0 0 10px #666">
+<img src="./static/imgs/init-2.jpg" width="600" style="box-shadow:0 0 10px #666">
 
 ## 然后就可以随便搞了
