@@ -1,8 +1,10 @@
-* 快速开始
+* [**秒入门**](quickstart.md)
 
-  * [webpack 配置](quickstart/webpack.md)
-  * [应用 - App](quickstart/app.md)
-  * [页面 - Page](quickstart/page.md)
+* 配置解释
+
+  * [webpack 配置](config/webpack.md)
+  * [应用 - App](config/app.md)
+  * [页面 - Page](config/page.md)
 
 * 特性
 
@@ -22,3 +24,5 @@
 * 更新日志
 
   * [更新日志](CHANGELOG.md)
+
+* [**社区**](COMMUNITY.md)
