@@ -19,6 +19,7 @@
 
 * 应用场景
 
+  * [分包](senarios/subpackage.md)
   * [typescript](senarios/typescript.md)
 
 * 更新日志
