@@ -1,3 +1,10 @@
+## 0.2.1 (20181109)
+
+- `A` 标签属性默认值，`<button enable>` 相当于 `<button enable="true">`
+- `U` 优化数据更新性能，减少冗余属性更新
+- `U` 优化 `@megalo/template-compiler` 的编译性能，配合 `@megalo/target`
+- `F` 修复百度智能小程序下更新 `'a-b'` 格式属性的 bug
+
 ## 0.2.0 (20181107)
 
 - `A` `$mp` 对象上增加 `platform` 字段，获取当前平台类型
