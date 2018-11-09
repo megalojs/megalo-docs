@@ -46,3 +46,16 @@ export default {
   }
 }
 ```
+
+## $mp
+
+页面的根 VM 上在页面初始化时保存小程序的相关信息，VM 树上所有的 VM 都可以通过 `this.$mp` 获取。
+
+```javascript
+{
+  platform: 'wechat',   // 平台
+  page: Page,           // 小程序页面实例
+  query: { id: 100 },   // onLoad 传入的页面参数对象
+  options: { id: 100 }, // 与 query 是同一个对象（别名）
+}
+```
