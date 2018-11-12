@@ -1,5 +1,5 @@
-<!-- ![megalo-log](_media/megalo-logo.png) -->
-<img src="./_media/megalo-logo.png" width=150>
+<!-- ![megalo-log](static/megalo.png) -->
+<img src="./static/megalo.png" width=200>
 
 # **Megalo**
 
@@ -12,3 +12,5 @@
 
 [GitHub](https://github.com/kaola-fed/megalo)
 [Get Started](quickstart)
+
+![color](#fff)

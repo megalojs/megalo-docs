@@ -1,4 +1,9 @@
-* [**秒入门**](quickstart.md)
+* 基础
+  * [快速上手](quickstart.md)
+  * [代码结构](basic/file.md)
+  * [页面生命周期](basic/lifecycle.md)
+  * [代码复用](basic/reuse.md)
+  * [其他](basic/others.md)
 
 * 配置解释
 
@@ -10,6 +15,10 @@
 
   * [支持特性](features/support.md)
   * [不支持特性](features/not-support.md)
+
+* API
+
+  * [API](api/index.md)
 
 * 平台
 

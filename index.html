@@ -8,9 +8,10 @@
   <meta name="keywords" content="Megalo, Vue.js, 小程序框架, 微信小程序, 百度智能小程序, 支付宝小程序, 官方文档">
   <meta name="og:title" property="og:title" content="Megalo -- 基于 Vue.js 的小程序框架">
   <meta name="og:description" property="og:description" content="Megalo -- 基于 Vue.js 的小程序框架，支持 微信小程序 百度智能小程序 支付宝小程序">
-
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="icon" href="/static/megalo.png" type="image/x-icon" />
+
 </head>
 <body>
   <h1 style="font-size: 0;">Megalo -- 基于 Vue.js 的小程序框架，支持 微信小程序 百度智能小程序 支付宝小程序</h1>
@@ -24,17 +25,32 @@
     window.$docsify = {
       name: 'Megalo',
       repo: 'https://github.com/kaola-fed/megalo',
-      loadSidebar: true,     
+      loadSidebar: true,  
+      loadNavbar: true,   
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md'
+      },
       subMaxLevel: 2,
       auto2top: true,
       coverpage: true,
-      logo: '_media/megalo-logo.png',
-      themeColor: '#af141d',
+      logo: 'static/megalo.png',
+      themeColor: '#359e6e',
       search: {
         noData: '找不到结果',
         paths: 'auto',
         placeholder: '搜索'
       },
+      plugins: [
+        function(hook, vm) {
+          hook.beforeEach(function (html) {
+            var url = 'https://github.com/kaola-fed/megalo-docs/tree/master/' + vm.route.file
+            var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
+
+            return html + '\n\n---\n' + editHtml
+          })
+        }
+      ]
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
