@@ -1,3 +1,7 @@
+## 0.2.2 (20181113)
+
+- `U` 将 App 内的小程序实例名称改为 `app`，通过 `this.$mp.app` 获取小程序 App 实例
+
 ## 0.2.1 (20181109)
 
 - `A` 标签属性默认值，`<button enable>` 相当于 `<button enable="true">`

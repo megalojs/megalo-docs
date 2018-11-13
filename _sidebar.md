@@ -33,6 +33,7 @@
 
 * 更新日志
 
-  * [更新日志](CHANGELOG.md)
+  * [megalo](changelog/CHANGELOG.md)
+  * [@megalo/target](changelog/TARGET_CHANGELOG.md)
 
 * [**社区**](COMMUNITY.md)
