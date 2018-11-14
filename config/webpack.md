@@ -60,4 +60,4 @@ module.exports = {
 - `vue-loader`：需要 `vue-loader`（^14） 加载和解析 `.vue` 文件；
 - `mini-css-extract-plugin`：用来将 css 提取到 `.wxss` 文件。
 
-> 以上配置为 Megalo 的必须配置，硬尽量避免修改以免导致解析出错
+> 以上配置为 Megalo 的必须配置，应尽量避免修改以免导致解析出错
