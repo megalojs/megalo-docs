@@ -1,3 +1,15 @@
+## 0.3.0 (20181113)
+
+- `A` 生命周期修改，`onLoad` 中出发 `rootVM.$mount()`，即首次数据更新在 `onLoad` 最后阶段触发
+- `A` 将 `<a href="">` 自动转换为 `<navigator url="">`
+- `U` 优化 `v-if` 条件表达式的 `render` 代码，减少执行次数
+- `F` 修复原生自定义组件的具名 `slot` 问题
+- `F` 修复支付宝 `web-view` 无法动态绑定 `src` 的问题
+
+## 0.2.2 (20181112)
+
+- `U` 将 App 内的小程序实例名称改为 `app`，通过 `this.$mp.app` 获取小程序 App 实例
+
 ## 0.2.1 (20181109)
 
 - `A` 标签属性默认值，`<button enable>` 相当于 `<button enable="true">`

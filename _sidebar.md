@@ -38,5 +38,5 @@
   * [开源 demo](community/demo.md)
 
 * 更新日志
-
-  * [更新日志](CHANGELOG.md)
+  * [megalo](changelog/CHANGELOG.md)
+  * [@megalo/target](changelog/TARGET_CHANGELOG.md)
