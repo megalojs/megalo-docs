@@ -31,8 +31,12 @@
   * [分包](senarios/subpackage.md)
   * [typescript](senarios/typescript.md)
 
+* 社区
+
+  * [诚邀加入](community/join-us.md)
+  * [社区文章](community/blog.md)
+  * [开源 demo](community/demo.md)
+
 * 更新日志
 
   * [更新日志](CHANGELOG.md)
-
-* [**社区**](COMMUNITY.md)

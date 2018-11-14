@@ -4,7 +4,7 @@
 
 要实现这个目标并不是易事，离不开社区的力量，我们诚邀诸位有追求有想法的同道中人共同参与 Megalo 的孵化、步道。
 
-## 期待你的加入
+### 期待你的加入
 
 <img alt="Join the chat at dingtalk" src="static/imgs/comm-1.jpeg" width="300"/><img alt="Join the chat at wechat" src="static/imgs/comm-2.png" width="300"/>
 
