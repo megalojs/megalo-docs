@@ -4,7 +4,7 @@
 
 主要生命周期的顺序为：`created`(`onLoad`) => `mounted`(`onReady`) => `beforeDestroyed`(`onUnload`)。同时 `onShow`、`onHide`、`onShareAppMessage`、`onReachBottom`、`onPullDownRefresh` 也会与小程序 `Page` 对应的声明周期钩子绑定。
 
-在每一个 Vue 实例中，都可以通过 `this.$mp` 方法访问小程序相关的数据，例如可以通过 `this.$mp.options` 访问 `onLoad` 时传入的参数，例如 `query` 字段。
+在每一个 Vue 实例中，都可以通过 `this.$mp` 对象访问小程序相关的数据，例如可以通过 `this.$mp.options` 访问 `onLoad` 时传入的参数，例如 `query` 字段。
 
 App 逻辑，`app.vue`。应用的生命周期钩子写在这里，运行时通过小程序的 `Page` 方法注册成小程序页面。
 
