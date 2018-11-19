@@ -62,9 +62,9 @@ $ npm run dev:swan
 
 调试的姿势请看[官方文档|小程序调试](https://developers.weixin.qq.com/miniprogram/dev/devtools/debug.html)。
 
-## 然后就可以随便搞了
+## 页面预览
 
-支持热更，全程无需关心小程序包的代码
+支持实时刷新
 
 <img src="./static/imgs/init-3.gif" style="box-shadow:0 0 10px #666">
 
