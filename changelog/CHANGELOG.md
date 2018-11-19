@@ -1,6 +1,6 @@
 ## 0.3.2 (20181116)
 
-- `F` 修复 `v-if` 异常 #33
+- `F` 优化 `v-if` render 逻辑，修复 `v-if` 异常 [#33](https://github.com/kaola-fed/megalo/issues/33)
 - `F` 修复数据更新异常
 - `F` 修复 `this.$mp.query` 获取页面参数异常
 
