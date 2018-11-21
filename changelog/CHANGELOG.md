@@ -1,3 +1,8 @@
+## 0.4.0 (20181121)
+
+- `A` 支持 `v-text`
+- `F` 修复组件名称问题，支持注册时为 `PascalCase`、`camelCase`，模版声明为 `kebab-case` [#41](https://github.com/kaola-fed/megalo/issues/41)
+
 ## 0.3.2 (20181116)
 
 - `F` 优化 `v-if` render 逻辑，修复 `v-if` 异常 [#33](https://github.com/kaola-fed/megalo/issues/33)
