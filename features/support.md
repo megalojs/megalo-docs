@@ -163,3 +163,9 @@ Vue.use(VHtmlPlugin)
 - capture，用小程序的 capture 绑定事件实现，例如 `@tap.capture` => `capture-bind`（支付宝小程序不支持）
 - self（实验），目前利用特定的 data-set 标记元素实现
 - once，模拟 removeListener 实现
+
+## v-text
+
+```html
+<div v-text="'I am text'"></div>
+```
