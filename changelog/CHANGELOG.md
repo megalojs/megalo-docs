@@ -1,3 +1,10 @@
+## 0.5.0 (20181129)
+
+- `U` 优化 `v-for` 所生成的代码
+- `U` 更改 scoped style 所生成的 scoped-class 逻辑，`class="div"` -> `class="div r-123"`，只要带上 scoped 都会添加 scoped-class
+- `F` 修复 `new Vue()` 不传参数时的异常
+- `F` 修复嵌套 `v-for` 和 `slot` 在某些场景下的异常
+
 ## 0.4.0 (20181121)
 
 - `A` 支持 `v-text`
