@@ -1,7 +1,5 @@
 # 应用 - App
 
-声明 `mpType` 为 `page` 作为小程序页面入口，以此绑定小程序 `App` 和 Vue 实例的声明周期。
-
 主要生命周期的顺序为：`created` => `mounted`(`onLaunch`)。同时 `onShow`、`onHide`、`onError`、`onPageNotFound` 也会与小程序 `App` 对应的声明周期钩子绑定。
 
 App 逻辑，`App.vue`。应用的生命周期钩子写在这里，运行时通过小程序的 `App` 方法注册应用。
@@ -10,7 +8,6 @@ App 逻辑，`App.vue`。应用的生命周期钩子写在这里，运行时通�
 <template></template>
 <script>
   export default {
-    mpType: 'app',
     created() {
       console.log('launch');
     }
@@ -58,11 +55,11 @@ export default {
 导航栏样式 | navigationStyle | ❌ | navigationStyle
 窗口的背景色 | backgroundColor | ❌ | backgroundColor
 下拉 loading 的样式 | backgroundTextStyle | ❌ | backgroundTextStyle
-顶部窗口的背景色 | backgroundColorTop | ❌ | 
-底部窗口的背景色 | backgroundColorBottom | ❌ | 
+顶部窗口的背景色 | backgroundColorTop | ❌ |
+底部窗口的背景色 | backgroundColorBottom | ❌ |
 是否开启当前页面的下拉刷新 | enablePullDownRefresh | pullRefresh | enablePullDownRefresh
 页面上拉触底事件触发时距页面底部距离 | onReachBottomDistance | ❌ | onReachBottomDistance
-屏幕旋转设置 | pageOrientation | ❌ | 
+屏幕旋转设置 | pageOrientation | ❌ |
 
 ### tabBar 转换对照
 
@@ -122,7 +119,7 @@ export default {
 ```javascript
 export default {
   config: {
-    // 统一配置 
+    // 统一配置
     window: {
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat'

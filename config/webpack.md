@@ -1,6 +1,6 @@
 #  webpack 配置
 
-Megalo 在构建时依赖 [`@magelo/target`](https://github.com/kaola-fed/megalo-aot) 和 [`@magelo/template-compiler`](https://github.com/kaola-fed/megalo)。利用 `createMegaloTarget` 方法创建 webpack 的构建目标，通过 `platform` 和 `compiler` 配置好模版编译器和目标平台。
+Megalo 在构建时依赖 [`@megalo/target`](https://github.com/kaola-fed/megalo-aot) 和 [`@megalo/template-compiler`](https://github.com/kaola-fed/megalo)。利用 `createMegaloTarget` 方法创建 webpack 的构建目标，通过 `platform` 和 `compiler` 配置好模版编译器和目标平台。
 
 ```javascript
 const createMegaloTarget = require( '@megalo/target' )
@@ -41,7 +41,7 @@ module.exports = {
     extensions: ['.vue', '.js', '.json'],
     alias: {
       // 重定 vue 指向
-      'vue': 'megalo', 
+      'vue': 'megalo',
       '@': _.resolve('src')
     },
   },
@@ -49,7 +49,7 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin( {
-      filename: `./static/css/[name].${cssExt}` // 重新定义后缀
+      filename: `static/css/[name].${cssExt}` // 重新定义后缀
     } )
   ]
 }

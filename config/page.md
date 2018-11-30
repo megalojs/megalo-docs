@@ -1,6 +1,6 @@
 # 页面 - Page
 
-声明 `mpType` 为 `page` 作为小程序页面入口，在小程序创建 `Page` 实例时（`onLoad` 阶段），同时会创建一个于这个实例绑定的 Vue 实例作为一个页面的根实例，并将各生命周期进行绑定。
+在小程序创建 `Page` 实例时（`onLoad` 阶段），同时会创建一个于这个实例绑定的 Vue 实例作为一个页面的根实例，并将各生命周期进行绑定。
 
 主要生命周期的顺序为：`created`(`onLoad`) => `mounted`(`onReady`) => `beforeDestroyed`(`onUnload`)。同时 `onShow`、`onHide`、`onShareAppMessage`、`onReachBottom`、`onPullDownRefresh` 也会与小程序 `Page` 对应的声明周期钩子绑定。
 
@@ -16,7 +16,6 @@ App 逻辑，`app.vue`。应用的生命周期钩子写在这里，运行时通�
 </template>
 <script>
   export default {
-    mpType: 'page',
     data() {
       return {
         title: 'Megalo'
@@ -67,13 +66,13 @@ export default {
 描述 | 微信 | 支付宝 | 百度
 ---|---|---|---
 导航栏背景颜色 | navigationBarBackgroundColor | titleBarColor | navigationBarBackgroundColor
-导航栏标题颜色 | navigationBarTextStyle | ❌  | navigationBarTextStyle 
+导航栏标题颜色 | navigationBarTextStyle | ❌  | navigationBarTextStyle
 导航栏标题文字内容 | navigationBarTitleText | defaultTitle | navigationBarTitleText
 窗口的背景色 | backgroundColor | ❌  | backgroundColor
 下拉 loading 的样式 | backgroundTextStyle | ❌  | backgroundTextStyle
 是否全局开启下拉刷新 | enablePullDownRefresh | pullRefresh | enablePullDownRefresh
 页面上拉触底事件触发时距页面底部距离 | onReachBottomDistance | ❌  | onReachBottomDistance
-设置为 true 则页面整体不能上下滚动 | disableScroll | ❌  | ❌ 
+设置为 true 则页面整体不能上下滚动 | disableScroll | ❌  | ❌
 
 ### 平台定制
 

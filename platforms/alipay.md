@@ -15,7 +15,7 @@ module.exports = {
 
   plugins: [
     new MiniCssExtractPlugin( {
-      filename: './static/css/[name].acss',
+      filename: 'static/css/[name].acss',
     } )
     // ...
   ]
