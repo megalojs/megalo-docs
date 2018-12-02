@@ -1,3 +1,10 @@
+## 0.5.1 (20181202)
+
+- `U` 支持组件上静态 class，即支持 `<comp class="comp" :class="classObject"></comp>`，[#52](https://github.com/kaola-fed/megalo/issues/52)
+- `U` 优化 globalData 逻辑，在 App 中可以通过 `this.globalData` 访问，页面通过 `this.$mp.app.globalData` 访问
+- `U` 优化 fallback slot 生成逻辑，在不定义的情况下也生成 fallback slot，，[#53](https://github.com/kaola-fed/megalo/issues/53)
+- `F` 修复循环中组件事件问题，[#54](https://github.com/kaola-fed/megalo/issues/54)
+
 ## 0.5.0 (20181129)
 
 - `U` 优化 `v-for` 所生成的代码
