@@ -1,3 +1,7 @@
+## 0.5.2 (20181203)
+
+- `F` 修复在 Promise 中连续更新同一个值时不更新到视图层的异常
+
 ## 0.5.1 (20181202)
 
 - `U` 支持组件上静态 class，即支持 `<comp class="comp" :class="classObject"></comp>`，[#52](https://github.com/kaola-fed/megalo/issues/52)
