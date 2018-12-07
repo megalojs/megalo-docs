@@ -12,7 +12,7 @@ megalo 在执行编译命令后会将工程文件编译成[小程序的代码结
 
 1. `.js` 为后缀的 entry 文件
 2. `.vue` 为后缀的业务源码文件
-3. 其他文件，`/components` 这类文件，也就是次要文件
+3. 其他文件，`/components`、`/static` 这类文件，也就是次要文件
 
 <img src="../static/imgs/file-1.jpg" width="260" style="box-shadow:0 0 10px #666"> 
 
