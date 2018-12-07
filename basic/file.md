@@ -16,7 +16,26 @@ megalo 在执行编译命令后会将工程文件编译成[小程序的代码结
 
 <img src="../static/imgs/file-1.jpg" width="260" style="box-shadow:0 0 10px #666"> 
 
-接下来我们分别看看这4种文件的作用。
+### 优化结构
+
+`@megalo/target` 在版本 `0.4.10` 后可将 `.js` 和 `.vue` 合并，根据实际情况再进行拆分
+
+新结构如下
+
+```catalogue
+├── src                      
+│   ├── components          
+│   ├── pages                     
+│   │   ├── my.vue             
+│   │   └── hello.vue                       
+│   ├── static         
+│   ├── app.js                   
+│   ├── App.vue                  
+│   └── .*           
+└── .*   
+``` 
+
+接下来我们分别看看这几种文件的作用。
 
 ## entry 文件
 
@@ -86,3 +105,42 @@ json 文件就不介绍了，功能和结构请参考[微信小程序官方文�
 ```
 
 关于小程序的 `WXML 模板`和 `WXSS 样式文件`解释，详见[微信小程序官方文档|代码结构](https://developers.weixin.qq.com/miniprogram/dev/quickstart/basic/file.html#wxml-%E6%A8%A1%E6%9D%BF)
+
+## js 文件和 vue 文件合并写法
+
+```vue
+<template>
+  <div class="app">
+    <!-- ... -->
+  </div>
+</template>
+
+<config>
+{
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "微信接口功能演示",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}
+</config>
+
+<script>
+export default {
+  // ...
+}
+</script>
+
+<style scoped>
+  // ...
+</style>
+
+```
+
+> 当需要对单页 Vue 对象赋能等操作时再采用独立写法
+
+## static 静态文件
+
+在 `static` 静态文件夹里存放的文件会在打包时 `copy` 到打包文件的 `static` 文件夹下。
+
+可通过绝对路径 `\static\imgs\logo.png` 访问
