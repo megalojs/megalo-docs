@@ -1,3 +1,14 @@
+## 0.6.0 (20181210)
+
+- `U` 重写 slot 的逻辑，修复某些使用场景下出现的渲染异常
+- `A` 支持 `mp:` 前缀属性，区分与 vue 语法冲突的属性名，如 `mp:key` [#71](https://github.com/kaola-fed/megalo/issues/71)
+- `A` 支持小程序原生钩子 mixin [#73](https://github.com/kaola-fed/megalo/issues/73)
+- `A` 支持通过 url-loader 转换后的图片资源加载 [#74](https://github.com/kaola-fed/megalo/issues/74)
+- `A` 初始化组件时将组件名称更新到 AppData，用于定位
+- `F` 修复 slot 中元素在某些情况下的渲染异常
+- `F` 修复 attrs 编译异常
+- `F` 修复计算 VMId 时触发 render 的问题
+
 ## 0.5.2 (20181203)
 
 - `F` 修复在 Promise 中连续更新同一个值时不更新到视图层的异常
