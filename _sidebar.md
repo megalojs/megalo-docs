@@ -36,6 +36,8 @@
   * [诚邀加入](community/join-us.md)
   * [社区文章](community/blog.md)
   * [开源 demo](community/demo.md)
+  * [周边生态](community/awesome.md)
+
 
 * 更新日志
   * [megalo](changelog/CHANGELOG.md)
