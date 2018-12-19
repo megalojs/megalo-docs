@@ -19,7 +19,7 @@
 * API
 
   * [API](api/index.md)
-  * [@megalo/api](megalo-api.md)
+  * [@megalo/api](api/megalo-api.md)
 
 * 平台
 
