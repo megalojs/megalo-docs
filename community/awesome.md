@@ -7,6 +7,7 @@
 
 ### 社区提供
 - axios小程序适配器：[axios-miniprogram-adapter](https://github.com/bigmeow/axios-miniprogram-adapter)
+- 与vue-router体验一致的路由跳转插件：[megalo-router](https://github.com/NextBoy/megalo-router)
 
 > *如果你想分享自己的项目或demo*
 >
