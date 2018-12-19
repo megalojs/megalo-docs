@@ -1,8 +1,8 @@
 # 周边生态
 
 ### 官方周边
-1. 工程化脚手架：[megalo-cli](https://github.com/megalojs/megalo-cli)
-2. px转换rpx单位：[megalo-px2rpx-loader](https://github.com/zwwill/megalo-yanxuan-demo)
+1. 工程化脚手架：[@megalo/cli](https://github.com/megalojs/megalo-cli)
+2. px转换rpx单位：[@megalo/px2rpx-loader](https://github.com/megalojs/megalo-px2rpx-loader)
 3. 重新封装各个端中的API：[@megalo/api](https://github.com/megalojs/megalo-api)
 
 ### 社区提供
