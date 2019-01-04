@@ -105,7 +105,7 @@ index.js
 export default {
   config: {
     usingComponents: {
-      textarea: 'path/to/components/textarea'
+      textarea: 'path/to/components/textarea/index'
     }
   }
 }
