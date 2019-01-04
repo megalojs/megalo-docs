@@ -32,6 +32,7 @@
   * [分包](senarios/subpackage.md)
   * [typescript](senarios/typescript.md)
   * [在 textarea 上使用 v-model](senarios/textarea.md)
+  * [使用原生自定义组件](senarios/custom-component.md)
 
 * 社区
 
