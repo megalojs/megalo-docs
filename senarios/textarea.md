@@ -25,7 +25,7 @@ index.wxml
   placeholder-class="{{placeholderClass}}"
   disabled="{{disabled}}"
   auto-focus="{{autoFocus}}"
-  focus="{{focue}}"
+  focus="{{focus}}"
   auto-height="{{autoHeight}}"
   fixed="{{fixed}}"
   cursor-spacing="{{cursorSpacing}}"
