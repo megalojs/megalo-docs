@@ -169,3 +169,11 @@ Vue.use(VHtmlPlugin)
 ```html
 <div v-text="'I am text'"></div>
 ```
+
+## v-model
+
+```html
+<div v-model="input"></div>
+```
+
+在 textarea 上使用 `v-model` 时请先参考 [textarea 上使用 v-model](senarios/textarea.md)

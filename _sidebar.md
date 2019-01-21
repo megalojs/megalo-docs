@@ -19,6 +19,7 @@
 * API
 
   * [API](api/index.md)
+  * [@megalo/api](api/megalo-api.md)
 
 * 平台
 
@@ -28,14 +29,19 @@
 
 * 应用场景
 
+  * [@megalo/ui](senarios/megalo-ui.md)
   * [分包](senarios/subpackage.md)
   * [typescript](senarios/typescript.md)
+  * [在 textarea 上使用 v-model](senarios/textarea.md)
+  * [使用原生自定义组件](senarios/custom-component.md)
 
 * 社区
 
   * [诚邀加入](community/join-us.md)
   * [社区文章](community/blog.md)
   * [开源 demo](community/demo.md)
+  * [周边生态](community/awesome.md)
+
 
 * 更新日志
   * [megalo](changelog/CHANGELOG.md)
