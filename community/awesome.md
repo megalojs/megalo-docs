@@ -2,8 +2,9 @@
 
 ### 官方周边
 1. 工程化脚手架：[@megalo/cli](https://github.com/megalojs/megalo-cli)
-2. px转换rpx单位：[@megalo/px2rpx-loader](https://github.com/megalojs/megalo-px2rpx-loader)
+2. px转换rpx单位：[@megalo/px2rpx-loader](https://github.com/megalojs/megalo-px2rpx-loader)
 3. 重新封装各个端中的API：[@megalo/api](https://github.com/megalojs/megalo-api)
+4. megalo工程开箱即用的、插件化的webpack小程序脚手架配置 [@megalo/cli-service](https://github.com/megalojs/megalo-cli-service)
 
 ### 社区提供
 1. axios小程序适配器：[axios-miniprogram-adapter](https://github.com/bigmeow/axios-miniprogram-adapter)
