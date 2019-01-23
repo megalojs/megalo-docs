@@ -2,7 +2,7 @@
 
 在小程序创建 `Page` 实例时（`onLoad` 阶段），同时会创建一个于这个实例绑定的 Vue 实例作为一个页面的根实例，并将各生命周期进行绑定。
 
-主要生命周期的顺序为：`created`(`onLoad`) => `mounted`(`onReady`) => `beforeDestroyed`(`onUnload`)。同时 `onShow`、`onHide`、`onShareAppMessage`、`onReachBottom`、`onPullDownRefresh` 也会与小程序 `Page` 对应的声明周期钩子绑定。
+主要生命周期的顺序为：`created`(`onLoad`) => `mounted`(`onReady`) => `beforeDestroy`(`onUnload`)。同时 `onShow`、`onHide`、`onShareAppMessage`、`onReachBottom`、`onPullDownRefresh` 也会与小程序 `Page` 对应的声明周期钩子绑定。
 
 在每一个 Vue 实例中，都可以通过 `this.$mp` 对象访问小程序相关的数据，例如可以通过 `this.$mp.options` 访问 `onLoad` 时传入的参数，例如 `query` 字段。
 
@@ -21,7 +21,7 @@ App 逻辑，`app.vue`。应用的生命周期钩子写在这里，运行时通�
         title: 'Megalo'
       };
     },
-    create() {
+    created() {
       // 获取 onLoad 中的 options
       console.log(this.$mp.options);
     }
