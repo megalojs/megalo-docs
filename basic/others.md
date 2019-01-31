@@ -12,7 +12,7 @@
 
 megalo 默认你拥有一定的 vue 开发能力，此处就不在多做介绍。
 
-如果你需求补充一些 vue 的基础只是，请前往 [《vue 官方文档》](https://cn.vuejs.org/)查漏补缺。
+如果你需求补充一些 vue 的基础知识，请前往 [《vue 官方文档》](https://cn.vuejs.org/)查漏补缺。
 
 > 注意：Megalo 并不是支持所有的 vue 特性，依然有[暂不支持的特性](features/not-support)待你们和我们一同完善
 
