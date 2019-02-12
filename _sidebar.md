@@ -34,6 +34,7 @@
   * [typescript](senarios/typescript.md)
   * [在 textarea 上使用 v-model](senarios/textarea.md)
   * [使用原生自定义组件](senarios/custom-component.md)
+  * [video 事件失效](senarios/video.md)
 
 * 社区
 
