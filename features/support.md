@@ -93,7 +93,7 @@ page template:
 
 目前 CompA 无法将从 page 接收到的 slot 片段传递给它的子组件 CompB。
 
-## slot-scope
+## slot-scope （Vue@2.6.6 废弃）[详见](https://cn.vuejs.org/v2/guide/components-slots.html#废弃了的语法)
 
 支持 slot-scope。
 
@@ -112,6 +112,26 @@ CompA template:
 ```html
 <div v-for="(item, i) in list">
   {{ i }} - <slot :item="item"></slot>
+</div>
+```
+
+## v-slot （Vue@2.6.6） 
+
+支持 `v-slot` 和缩写形式 `#default`[详见](https://cn.vuejs.org/v2/guide/components-slots.html)。
+
+page template:
+
+```html
+<div>
+  <CompA>
+    <span v-slot="scope">{{ scope.x }}</span>
+    <span v-slot:head="{ y }">{{ y }}</span>
+  </CompA>
+
+  <CompA>
+    <span #default="scope">{{ scope.x }}</span>
+    <span #head="{ y }">{{ y }}</span>
+  </CompA>
 </div>
 ```
 
