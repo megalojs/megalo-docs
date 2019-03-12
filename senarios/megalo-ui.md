@@ -18,7 +18,8 @@ npm install @megalo/ui
 ```
 
 ## 使用
-组件使用了scss以及px2rpx两个loader, 因此需要在配置文件中引用
+组件使用了scss以及px2rpx两个loader, 因此需要在配置文件中引用。
+
 ```javascript
 {
   test: /\.scss$/,
@@ -42,6 +43,8 @@ alias: {
   'megalo-ui': '@megalo/ui/dist/components'
 }
 ```
+
+注意：因为需要直接引用组件库里面的源码，所以需要利用 babel-loader 对组件库的源码进行转换，需要配置 `include: /node_modules\/meglao-ui/`
 
 在代码中 *import* 需要的组件并使用
 ```javascript
