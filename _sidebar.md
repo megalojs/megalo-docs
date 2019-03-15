@@ -1,10 +1,13 @@
 * 基础
   * [快速上手](quickstart.md)
-  * [cli服务](basic/cli-service.md)
   * [代码结构](basic/file.md)
   * [页面生命周期](basic/lifecycle.md)
   * [代码复用](basic/reuse.md)
   * [其他](basic/others.md)
+
+* Cli
+  * [cli服务](cli/cli-service.md)
+  * [megalo.config.js](cli/megalo-config-js.md)
 
 * 配置解释
 
