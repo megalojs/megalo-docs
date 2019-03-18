@@ -1,3 +1,17 @@
+## 0.9.0 (20190318)
+
+- `A` 支持字节跳动小程序 #56
+- `A` 维持 `Vue.version` 的版本好和 Vue 版本一致，megalo 版本号用 `Vue.megaloVerison` 记录 #183
+- `A` 当事件处理方法为空时抛出异常 #181
+- `A` 将每个元素 attribute 名称转换成驼峰格式 #56
+- `F` 修复 attribute 的更新异常
+- `F` 修复 `v-if` 和 `<template v-slot>` 一起使用时的异常 #34
+- `F` 修复 `v-if` 和 `<slot>` 一起使用时的异常  #142
+- `F` 修复 vhtml 的容器元素，支持 class #169
+- `F` 修复 holder 变量名和 id 的生成逻辑
+- `F` 修复判断是否为同一个节点 (sameVnode) 的逻辑
+- `F` 修复 slot 中事件异常问题
+
 ## 0.8.0 (20190221)
 
 - `A` 将 `Vue` 的 Core 部分升级至 `2.6.6`，支持新的 slot 语法（`v-slot`、`#default`） #159
