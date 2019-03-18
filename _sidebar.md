@@ -5,6 +5,10 @@
   * [代码复用](basic/reuse.md)
   * [其他](basic/others.md)
 
+* Cli
+  * [cli服务](cli/cli-service.md)
+  * [megalo.config.js](cli/megalo-config-js.md)
+
 * 配置解释
 
   * [webpack 配置](config/webpack.md)
