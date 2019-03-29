@@ -55,12 +55,13 @@ npx megalo-cli-service serve
   --platform    指定要编译的平台 (默认值: wechat), 可选值: wechat、alipay、swan、tt、h5,其中 tt 和 h5 目前还未得到支持
   --mode        指定环境模式 (默认值：production)
   --report      生成 report.html 以帮助分析包内容
+  --report-json 生成 report.json 以帮助分析包内容
 ```
 
 `megalo-cli-service build` 会在 `dist-wechat` 目录产生一个可用于生产环境的包，带有 JS/CSS 的压缩混淆
 
-# 配置时无需 Eject
+## 配置时无需 Eject
 
-通过 `megalo your-project-name` 创建的项目无需额外的配置就已经可以跑起来了。绝大多数情况下，你只需要在交互式命令提示中选取需要的功能即可。
+通过 `sao npm:@megalo/cli your-project-name` 创建的项目无需额外的配置就已经可以跑起来了。绝大多数情况下，你只需要在交互式命令提示中选取需要的功能即可。
 
-不过我们也知道满足每一个需求是不太可能的，而且一个项目的需求也会不断改变。通过 megalo CLI 创建的项目让你无需 eject 就能够配置工具的几乎每个角落。更多细节请查阅[配置参考](./megalo-config-js)。
+不过我们也知道满足每一个需求是不太可能的，而且一个项目的需求也会不断改变。通过 megalo CLI 创建的项目让你无需 eject 就能够配置工具的几乎每个角落。更多细节请查阅[megalo-config-js](cli/megalo-config-js)。

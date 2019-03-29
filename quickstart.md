@@ -3,7 +3,7 @@
 ## 安装 CLI
 
 ```shell
-$ npm install -g @megalo/cli
+$ npm i -g sao
 # 需要管理员权限 
 ```
 
@@ -16,13 +16,9 @@ $ npm set registry https://registry.npm.taobao.org/
 ## 创建 Megalo 工程
 
 ```shell
-$ megalo my-megalo-pro
+$ sao npm:@megalo/cli your-project-name
 
-# 或者在已有目录下初始化
-
-$ mkdir my-megalo-pro
-$ cd my-megalo-pro
-$ megalo
+$ cd your-project-name
 ```
 
 ## 构建小程序包
@@ -46,7 +42,10 @@ $ npm run dev:swan
 
 [点击此处下载最新版](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)
 
-
+## 小程序开发工具设置
+- 关闭 ES6 转 ES5 功能，开启可能报错
+- 推荐开启上传代码时样式自动补全
+- 关闭代码压缩上传，开启可能报错
 
 ## 调试
 
@@ -73,3 +72,5 @@ $ npm run dev:swan
 megalo cli 可用于快速构建工程，仅仅是一个可落地项目的开始，为了便于开发者扩充，初始项目功能较为单一。
 
 如果你需要对工程结构进行扩充，DIY 之前你需要了解，我们对基础的 webapck 配置做了哪些修改 [webpack 配置](config/webpack)。
+
+同时我们对标 vue-cli3 提供了零配置可用的 [@megalo/cli-service](cli/cli-service)。
