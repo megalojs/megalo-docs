@@ -66,7 +66,7 @@ export default {
 
 由于小程序的各个页面间都是相对独立的，官方提供了 `globalData` 用于储存全局数据
 
-megalo 将 globalData 改造成了类似于 vue data 的构建形式，可以是对象，也可以说执行方法
+megalo 将 globalData 改造成了类似于 vue data 的构建形式，可以是对象，也可以是执行方法
 
 ```js
 // object
