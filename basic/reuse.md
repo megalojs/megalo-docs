@@ -31,28 +31,27 @@ $ npm run dev:swan
 
 以 [vant-weapp](https://youzan.github.io/vant-weapp/) 的使用方式为例，谨以此为例不代表官方推荐
 
-只需将源码 clone 到构建后的微信包【dist-wechat】里，然后在 json 文件中引入按钮对应的自定义组件即可
+只需将[源码](https://github.com/youzan/vant-weapp/tree/dev/lib) clone 到 `src/native`里，然后在 json 文件中引入按钮对应的自定义组件即可
 
-<img src="../static/imgs/reuse-2.png" width=250 style="box-shadow:0 0 10px #666">
-
-```js
-// hello.js
-import App from './hello'
-import Vue from 'vue'
-const app = new Vue(App)
-app.$mount()
-
-export default {
-    config: {
-        "usingComponents": {
-            "van-notice-bar": "/vant-weapp/dist/notice-bar/index"
-        }
-    }
-}
+假设我们的目录层级如下:
+```
+-src
+    --native
+        ---vant
+    --pages
+        ---hello.vue
 ```
 
 ```html
-<!-- hello.vue -->
+<!-- 在页面中引入配置 hello.vue -->
+<config>
+{
+  "usingComponents": {
+    "van-notice-bar": "../native/vant/van-notice-bar/index"
+  }
+}
+</config>
+<!-- 使用 -->
 <template>
   <div class="app">
     <van-notice-bar
