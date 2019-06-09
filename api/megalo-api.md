@@ -27,7 +27,7 @@ plugins: [
 `ENV_TYPE.WEAPP` 微信小程序环境  
 `ENV_TYPE.SWAN` 百度小程序环境  
 `ENV_TYPE.ALIPAY` 支付宝小程序环境  
-`ENV_TYPE.TT` 今日头条小程序环境  
+`ENV_TYPE.TOUTIAO` 今日头条小程序环境  
 `ENV_TYPE.WEB` WEB(H5)环境
 
 #### Megalo.getEnv()
@@ -1062,9 +1062,9 @@ Megalo.stopAccelerometer()
 
 | API | 微信小程序 | 百度小程序 | 支付宝小程序 | 今日头条小程序 | H5 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Megalo.onAccelerometerChange | ✔️ | ✔️ | ✔️ | ✔️ |  |
-| Megalo.startAccelerometer | ✔️ | ✔️ |  | ✔️ |  |
-| Megalo.stopAccelerometer | ✔️ | ✔️ | ✔️ | ✔️ |  |
+| Megalo.onAccelerometerChange | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Megalo.startAccelerometer | ✔️ | ✔️ |  | ✔️ | ✔️ |
+| Megalo.stopAccelerometer | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 
 ### 罗盘
 
@@ -1204,7 +1204,7 @@ Megalo.getClipboardData(params).then(...)
 
 | API | 微信小程序 | 百度小程序 | 支付宝小程序 | 今日头条小程序 | H5 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Megalo.setClipboardData | ✔️ | ✔️ | ✔️ | ✔️ |  |
+| Megalo.setClipboardData | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 | Megalo.getClipboardData | ✔️ | ✔️ | ✔️ | ✔️ |  |
 
 ### 蓝牙
