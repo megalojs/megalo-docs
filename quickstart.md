@@ -4,7 +4,7 @@
 
 ```shell
 $ npm i -g sao
-# 需要管理员权限 
+# sao是一个模板下载工具，需要管理员权限 
 ```
 
 如果安装失败或者过慢，可以尝试切换 [taobao 源](http://npm.taobao.org/)
@@ -16,7 +16,7 @@ $ npm set registry https://registry.npm.taobao.org/
 ## 创建 Megalo 工程
 
 ```shell
-$ sao npm:@megalo/cli your-project-name
+$ sao npm:@megalo/cli your-project-name --update
 
 $ cd your-project-name
 ```
