@@ -1,21 +1,3 @@
 # 使用 typescript
 
-Typescript工程 入口需要增加下面配置（TODO：待完善）
-
-```javascript
-import { Component } from 'vue-property-decorator';
-
-declare module "megalo/types/vue" {
-  interface Vue {
-    $mp: any
-  }
-}
-
-Component.registerHooks([
-  'onShow',
-  'onHide',
-  'onShareAppMessage',
-  'onReachBottom',
-  'onPullDownRefresh'
-])
-```
+请直接使用 `@megalo/cli` 创建 typescript 项目,如果你想了解相关的webpack配置感兴趣,可以配置 `megalo-cli-service inspect` 命令查看, 或者可查看 [@megalo/cli-plugin-typescript](https://github.com/bigmeow/megalo-cli/blob/master/packages/%40megalo/cli-plugin-typescript/README.md)

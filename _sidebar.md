@@ -10,6 +10,7 @@
   * [cli服务](cli/cli-service.md)
   * [megalo.config.js](cli/megalo-config-js.md)
   * [环境变量和模式](cli/mode-and-env.md)
+  * [cli插件](cli/cli-plugin.md)
 
 * 配置解释
 

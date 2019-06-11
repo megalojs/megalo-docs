@@ -52,13 +52,46 @@ npx megalo-cli-service serve
 用法：megalo-cli-service build [options] [entry|pattern]
 
 选项：
-  --platform    指定要编译的平台 (默认值: wechat), 可选值: wechat、alipay、swan、tt、h5,其中 tt 和 h5 目前还未得到支持
+  --platform    指定要编译的平台 (默认值: wechat), 可选值: wechat、alipay、swan、toutiao、h5,其中 h5 目前还未得到支持
   --mode        指定环境模式 (默认值：production)
   --report      生成 report.html 以帮助分析包内容
   --report-json 生成 report.json 以帮助分析包内容
 ```
 
 `megalo-cli-service build` 会在 `dist-wechat` 目录产生一个可用于生产环境的包，带有 JS/CSS 的压缩混淆
+
+
+## megalo-cli-service inspect (beta版开始支持)
+
+```
+用法：megalo-cli-service inspect [options] [...paths]
+
+选项：
+
+  --mode    指定环境模式 (默认值：development)
+```
+
+你可以使用 `megalo-cli-service inspect` 来审查一个 Megalo CLI 项目的 webpack config。
+
+
+
+## 查看所有的可用命令
+
+有些 CLI 插件会向 `megalo-cli-service` 注入额外的命令。例如 `@megalo/cli-plugin-eslint` 会注入 `megalo-cli-service lint` 命令。你可以运行以下命令查看所有注入的命令：
+
+``` bash
+npx vue-cli-service help
+```
+
+你也可以这样学习每个命令可用的选项：
+
+``` bash
+npx megalo-cli-service help [command]
+```
+例如:
+``` bash
+npx megalo-cli-service help build
+```
 
 ## 配置时无需 Eject
 

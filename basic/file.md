@@ -144,3 +144,36 @@ export default {
 在 `static` 静态文件夹里存放的文件会在打包时 `copy` 到打包文件的 `static` 文件夹下。
 
 可通过绝对路径 `\static\imgs\logo.png` 访问
+
+注意:如果你正在使用最新版本的 `@megalo/cli` 创建项目,那么上述规则将不生效,我们不推荐粗暴的将静态资源直接拷贝,因为你在页面中通过`img` 标签的 `src` 属性引用的图片、`require(图片相对路径)` 函数引用图片，都会被 `file-loader` 处理并拷贝到dist-wechat目录，相关webpack配置看[这里](https://github.com/bigmeow/megalo-cli/blob/08357c839ed0aed4ce50fba3b3eb21778b37b584/packages/%40megalo/cli-plugin-mp/index.js#L136),如果你直接拷贝，就会重复多出一份静态资源
+
+但是有些情况下，我们的确需要图片拷贝，比如小程序首页底部的tab图标的存放位置，它不属于vue框架管理，这时推荐将此资源放置到 `src/native` 目录下， 此目录主要存放不属于框架管理的代码(小程序原生组件)和静态资源
+
+如果 "我不听我不听,就是需要拷贝" , 你可以在 `megalo.config.js` 里加入下面的代码:
+```js
+{
+  chainWebpack: chainConfig => {
+    // 你可以在这里通过 https://github.com/neutrinojs/webpack-chain 来精细的修改webpack配置
+    const path = require('path')
+    function resolve (_path) {
+      return path.resolve(process.cwd(), _path)
+    }
+    chainConfig.plugin('copy-webpack-plugin').tap(oldArgs => {
+      oldArgs[0].push({
+        context: resolve('src/static'),
+        from: `**/*`,
+        to: resolve(`dist-${process.env.PLATFORM}/static`)
+      })
+      return oldArgs
+    })
+  },
+}
+```
+为了验证你的修改是否有效, 你可以在 `package.json` 文件 `scripts` 中加一条命令:
+```
+ "debug": "megalo-cli-service inspect plugins"
+```
+然后执行
+```bash
+npm run debug
+```
