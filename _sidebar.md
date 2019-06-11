@@ -3,6 +3,7 @@
   * [代码结构](basic/file.md)
   * [页面生命周期](basic/lifecycle.md)
   * [代码复用](basic/reuse.md)
+  * [跨平台兼容](basic/platforms.md)
   * [其他](basic/others.md)
 
 * Cli
