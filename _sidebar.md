@@ -33,6 +33,7 @@
   * [微信小程序](platforms/wechat.md)
   * [支付宝小程序](platforms/alipay.md)
   * [百度智能小程序](platforms/swan.md)
+  * [h5](platforms/web.md)
 
 * 应用场景
 
